@@ -18,13 +18,18 @@ tags: []
 apis:
   - aid: box:box-authorize-api
     name: Box Authorize API
-    description: Needs a description
-    tags: []
+    description: >-
+      Authorize a user by sending them through the Box website and request their
+      permission to act on their behalf.
+    tags:
+      - Authorize
+      - Users
     overlays:
       - type: APIs.io Search
         url: overlays/authorize-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/authorize-openapi-api-evangelist-ratings.yml
+    humanURL: https://developer.box.com/reference/get-authorize/
   - aid: box:box-oauth2-api
     name: Box Oauth2 API
     description: Needs a description
