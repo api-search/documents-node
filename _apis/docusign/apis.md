@@ -1,135 +1,500 @@
 ---
-aid: docusign
-name: Docusign
+aid: box
+name: Box
 description: >-
-  Docusign, Inc. is an American software company headquartered in San Francisco, California, that provides products for organizations to manage electronic agreements with electronic signatures on different devices.
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/docusign.yml
-created: 2024-06-07
-modified: 2024-06-07
+  Box, Inc. (formerly Box.net) is a public company based in Redwood City,
+  California. It develops and markets cloud-based content management,
+  collaboration, and file sharing tools for businesses. Box was founded in 2005
+  by Aaron Levie and Dylan Smith. Initially, it focused on consumers, but around
+  2009 and 2010 Box pivoted to focus on business users. The company raised about
+  $500 million over numerous funding rounds, before going public in 2015. Its
+  software allows users to store and manage files in an online folder system
+  accessible from any device. Users can then comment on the files, share them,
+  apply workflows, and implement security and governance policies.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml
+created: 2024/04/14
+modified: '2024-07-03'
 specificationVersion: '0.18'
 tags: []
 apis:
-  - aid: docusign:docusign-api
-    name: Docusign API
-    description: Needs description. 
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.docusign.com/docs/esign-rest-api/reference/
-    baseURL: https://api.example.com
+  - aid: box:box-authorize-api
+    name: Box Authorize API
+    description: >-
+      Authorize a user by sending them through the Box website and request their
+      permission to act on their behalf.
+    tags:
+      - Authorize
+      - Users
+    overlays:
+      - type: APIs.io Search
+        url: overlays/authorize-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/authorize-openapi-api-evangelist-ratings.yml
+    humanURL: https://developer.box.com/reference/get-authorize/
+  - aid: box:box-oauth2-api
+    name: Box Oauth2 API
+    description: Needs a description
     tags: []
-    properties:
-      - type: Documentation
-        url: https://developers.docusign.com/docs/esign-rest-api/reference/
-      - type: OpenAPI
-        url: properties/docusign-openapi-original.yml
-  - aid: docusign:docusign-admin-api
-    name: Docusign Admin API
-    description: Needs description.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.docusign.com/docs/esign-rest-api/reference/
-    baseURL: https://api.hellosign.com
+    overlays:
+      - type: APIs.io Search
+        url: overlays/oauth2-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/oauth2-openapi-api-evangelist-ratings.yml
+  - aid: box:box-files-api
+    name: Box Files API
+    description: Needs a description
     tags: []
-    properties:
-      - type: Documentation
-        url: https://developers.docusign.com/docs/esign-rest-api/reference/             
-      - type: OpenAPI
-        url: properties/docusign-admin-openapi-original.yml
-  - aid: docusign:docusign-click-api
-    name: Docusign Click API
-    description: Needs description.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.docusign.com/docs/esign-rest-api/reference/
-    baseURL: https://api.hellosign.com
+    overlays:
+      - type: APIs.io Search
+        url: overlays/files-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/files-openapi-api-evangelist-ratings.yml
+  - aid: box:box-file-requests-api
+    name: Box File Requests API
+    description: Needs a description
     tags: []
-    properties:
-      - type: Documentation
-        url: https://developers.docusign.com/docs/esign-rest-api/reference/             
-      - type: OpenAPI
-        url: properties/docusign-click-openapi-original.yml    
-  - aid: docusign:docusign-maestro-api
-    name: Docusign Maestro API
-    description: Needs description.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.docusign.com/docs/esign-rest-api/reference/
-    baseURL: https://api.hellosign.com
+    overlays:
+      - type: APIs.io Search
+        url: overlays/file-requests-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/file-requests-openapi-api-evangelist-ratings.yml
+  - aid: box:box-folders-api
+    name: Box Folders API
+    description: Needs a description
     tags: []
-    properties:
-      - type: Documentation
-        url: https://developers.docusign.com/docs/esign-rest-api/reference/             
-      - type: OpenAPI
-        url: properties/docusign-maestro-openapi-original.yml 
-  - aid: docusign:docusign-monitor-api
-    name: Docusign Monitor API
-    description: Needs description.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.docusign.com/docs/esign-rest-api/reference/
-    baseURL: https://api.hellosign.com
+    overlays:
+      - type: APIs.io Search
+        url: overlays/folders-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/folders-openapi-api-evangelist-ratings.yml
+  - aid: box:box-folder-locks-api
+    name: Box Folder Locks API
+    description: Needs a description
     tags: []
-    properties:
-      - type: Documentation
-        url: https://developers.docusign.com/docs/esign-rest-api/reference/             
-      - type: OpenAPI
-        url: properties/docusign-monitor-openapi-original.yml      
-  - aid: docusign:docusign-rooms-api
-    name: Docusign Rooms API
-    description: Needs description.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.docusign.com/docs/esign-rest-api/reference/
-    baseURL: https://api.hellosign.com
+    overlays:
+      - type: APIs.io Search
+        url: overlays/folder-locks-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/folder-locks-openapi-api-evangelist-ratings.yml
+  - aid: box:box-metadata-templates-api
+    name: Box Metadata Templates API
+    description: Needs a description
     tags: []
-    properties:
-      - type: Documentation
-        url: https://developers.docusign.com/docs/esign-rest-api/reference/             
-      - type: OpenAPI
-        url: properties/docusign-rooms-openapi-original.yml        
-common:
-  - type: Portal
-    url: https://developers.docusign.com/    
-  - type: SDKs
-    url: https://developers.docusign.com/docs/esign-rest-api/sdks/   
-  - type: Authentication
-    url: https://developers.docusign.com/platform/auth/   
-  - type: Postman Collections
-    url: https://developers.docusign.com/tools/postman/  
-  - type: Tools
-    url: https://developers.docusign.com/tools/overview/
-  - type: Explorer
-    url: https://developers.docusign.com/tools/api-explorer/
-  - type: OpenAPI
-    url: https://developers.docusign.com/tools/openapi-files/
-  - type: Dashboard
-    url: https://developers.docusign.com/tools/api-dashboard/
-  - type: Usage
-    url: https://developers.docusign.com/tools/api-usage-center/   
-  - type: Support
-    url: https://developers.docusign.com/support/
-  - type: Stack Overflow
-    url: https://stackoverflow.com/questions/tagged/docusignapi
-  - type: FAQ
-    url: https://support.docusign.com/s/articles/DocuSign-Developer-Support-FAQs
-  - type: Videos
-    url: https://www.youtube.com/channel/UCJSJ2kMs_qeQotmw4-lX2NQ    
-  - type: Change Log
-    url: https://developers.docusign.com/changelog?filter=    
-  - type: GitHub Org
-    url: https://github.com/docusign    
-  - type: Community
-    url: https://community.docusign.com/developer-59
-  - type: Webhooks
-    url: https://developers.docusign.com/platform/webhooks/   
-  - type: Quick Start
-    url: https://developers.docusign.com/docs/esign-rest-api/quickstart/   
-  - type: Resources
-    url: https://www.docusign.com/resources  
-  - type: Terms of Service
-    url: https://www.docusign.com/company/terms-and-conditions/developers
-  - type: Privacy
-    url: https://www.docusign.com/company/privacy-policy
+    overlays:
+      - type: APIs.io Search
+        url: overlays/metadata-templates-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/metadata-templates-openapi-api-evangelist-ratings.yml
+  - aid: box:box-metadata-cascade-policies-api
+    name: Box Metadata Cascade Policies API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/metadata-cascade-policies-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/metadata-cascade-policies-openapi-api-evangelist-ratings.yml
+  - aid: box:box-metadata-queries-api
+    name: Box Metadata Queries API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/metadata-queries-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/metadata-queries-openapi-api-evangelist-ratings.yml
+  - aid: box:box-comments-api
+    name: Box Comments API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/comments-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/comments-openapi-api-evangelist-ratings.yml
+  - aid: box:box-collaborations-api
+    name: Box Collaborations API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/collaborations-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/collaborations-openapi-api-evangelist-ratings.yml
+  - aid: box:box-search-api
+    name: Box Search API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/search-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/search-openapi-api-evangelist-ratings.yml
+  - aid: box:box-tasks-api
+    name: Box Tasks API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/tasks-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/tasks-openapi-api-evangelist-ratings.yml
+  - aid: box:box-task-assignments-api
+    name: Box Task Assignments API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/task-assignments-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/task-assignments-openapi-api-evangelist-ratings.yml
+  - aid: box:box-shared-items-api
+    name: Box Shared Items API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/shared-items-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/shared-items-openapi-api-evangelist-ratings.yml
+  - aid: box:box-shared-itemsfolders-api
+    name: Box Shared Items#folders API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/shared-itemsfolders-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/shared-itemsfolders-openapi-api-evangelist-ratings.yml
+  - aid: box:box-web-links-api
+    name: Box Web Links API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/web-links-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/web-links-openapi-api-evangelist-ratings.yml
+  - aid: box:box-shared-itemsweb-links-api
+    name: Box Shared Items#web Links API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/shared-itemsweb-links-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/shared-itemsweb-links-openapi-api-evangelist-ratings.yml
+  - aid: box:box-users-api
+    name: Box Users API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/users-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/users-openapi-api-evangelist-ratings.yml
+  - aid: box:box-invites-api
+    name: Box Invites API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/invites-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/invites-openapi-api-evangelist-ratings.yml
+  - aid: box:box-groups-api
+    name: Box Groups API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/groups-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/groups-openapi-api-evangelist-ratings.yml
+  - aid: box:box-group-memberships-api
+    name: Box Group Memberships API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/group-memberships-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/group-memberships-openapi-api-evangelist-ratings.yml
+  - aid: box:box-webhooks-api
+    name: Box Webhooks API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/webhooks-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/webhooks-openapi-api-evangelist-ratings.yml
+  - aid: box:box-skill-invocations-api
+    name: Box Skill Invocations API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/skill-invocations-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/skill-invocations-openapi-api-evangelist-ratings.yml
+  - aid: box:box-events-api
+    name: Box Events API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/events-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/events-openapi-api-evangelist-ratings.yml
+  - aid: box:box-collections-api
+    name: Box Collections API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/collections-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/collections-openapi-api-evangelist-ratings.yml
+  - aid: box:box-recent-items-api
+    name: Box Recent Items API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/recent-items-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/recent-items-openapi-api-evangelist-ratings.yml
+  - aid: box:box-retention-policies-api
+    name: Box Retention Policies API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/retention-policies-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/retention-policies-openapi-api-evangelist-ratings.yml
+  - aid: box:box-retention-policy-assignments-api
+    name: Box Retention Policy Assignments API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/retention-policy-assignments-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/retention-policy-assignments-openapi-api-evangelist-ratings.yml
+  - aid: box:box-legal-hold-policies-api
+    name: Box Legal Hold Policies API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/legal-hold-policies-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/legal-hold-policies-openapi-api-evangelist-ratings.yml
+  - aid: box:box-legal-hold-policy-assignments-api
+    name: Box Legal Hold Policy Assignments API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/legal-hold-policy-assignments-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/legal-hold-policy-assignments-openapi-api-evangelist-ratings.yml
+  - aid: box:box-file-version-retentions-api
+    name: Box File Version Retentions API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/file-version-retentions-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/file-version-retentions-openapi-api-evangelist-ratings.yml
+  - aid: box:box-file-version-legal-holds-api
+    name: Box File Version Legal Holds API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/file-version-legal-holds-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/file-version-legal-holds-openapi-api-evangelist-ratings.yml
+  - aid: box:box-shield-information-barriers-api
+    name: Box Shield Information Barriers API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/shield-information-barriers-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/shield-information-barriers-openapi-api-evangelist-ratings.yml
+  - aid: box:box-shield-information-barrier-reports-api
+    name: Box Shield Information Barrier Reports API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/shield-information-barrier-reports-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/shield-information-barrier-reports-openapi-api-evangelist-ratings.yml
+  - aid: box:box-shield-information-barrier-segments-api
+    name: Box Shield Information Barrier Segments API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/shield-information-barrier-segments-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/shield-information-barrier-segments-openapi-api-evangelist-ratings.yml
+  - aid: box:box-shield-information-barrier-segment-members-api
+    name: Box Shield Information Barrier Segment Members API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/shield-information-barrier-segment-members-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/shield-information-barrier-segment-members-openapi-api-evangelist-ratings.yml
+  - aid: box:box-shield-information-barrier-segment-restrictions-api
+    name: Box Shield Information Barrier Segment Restrictions API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: >-
+          overlays/shield-information-barrier-segment-restrictions-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/shield-information-barrier-segment-restrictions-openapi-api-evangelist-ratings.yml
+  - aid: box:box-device-pinners-api
+    name: Box Device Pinners API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/device-pinners-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/device-pinners-openapi-api-evangelist-ratings.yml
+  - aid: box:box-enterprises-api
+    name: Box Enterprises API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/enterprises-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/enterprises-openapi-api-evangelist-ratings.yml
+  - aid: box:box-terms-of-services-api
+    name: Box Terms Of Services API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/terms-of-services-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/terms-of-services-openapi-api-evangelist-ratings.yml
+  - aid: box:box-terms-of-service-user-statuses-api
+    name: Box Terms Of Service User Statuses API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/terms-of-service-user-statuses-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/terms-of-service-user-statuses-openapi-api-evangelist-ratings.yml
+  - aid: box:box-collaboration-whitelist-entries-api
+    name: Box Collaboration Whitelist Entries API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/collaboration-whitelist-entries-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/collaboration-whitelist-entries-openapi-api-evangelist-ratings.yml
+  - aid: box:box-collaboration-whitelist-exempt-targets-api
+    name: Box Collaboration Whitelist Exempt Targets API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/collaboration-whitelist-exempt-targets-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/collaboration-whitelist-exempt-targets-openapi-api-evangelist-ratings.yml
+  - aid: box:box-storage-policies-api
+    name: Box Storage Policies API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/storage-policies-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/storage-policies-openapi-api-evangelist-ratings.yml
+  - aid: box:box-storage-policy-assignments-api
+    name: Box Storage Policy Assignments API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/storage-policy-assignments-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/storage-policy-assignments-openapi-api-evangelist-ratings.yml
+  - aid: box:box-zip-downloads-api
+    name: Box Zip Downloads API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/zip-downloads-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/zip-downloads-openapi-api-evangelist-ratings.yml
+  - aid: box:box-sign-requests-api
+    name: Box Sign Requests API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/sign-requests-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/sign-requests-openapi-api-evangelist-ratings.yml
+  - aid: box:box-workflows-api
+    name: Box Workflows API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/workflows-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/workflows-openapi-api-evangelist-ratings.yml
+  - aid: box:box-sign-templates-api
+    name: Box Sign Templates API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/sign-templates-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/sign-templates-openapi-api-evangelist-ratings.yml
+  - aid: box:box-integration-mappings-api
+    name: Box Integration Mappings API
+    description: Needs a description
+    tags: []
+    overlays:
+      - type: APIs.io Search
+        url: overlays/integration-mappings-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/integration-mappings-openapi-api-evangelist-ratings.yml
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
     email: info@apievangelist.com
-overlays:
-  - type: APIs.io Search
-    url: overlays/apis-io-search.yml
+
 ---
