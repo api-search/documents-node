@@ -12,9 +12,10 @@ description: >-
   apply workflows, and implement security and governance policies.
 url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml
 created: 2024/04/14
-modified: 2024/04/14
-specificationVersion: '0.16'
-tags: []
+modified: '2024-07-03'
+specificationVersion: '0.18'
+tags:
+  - Documents
 apis:
   - aid: box:box-authorize-api
     name: Box Authorize API
@@ -156,7 +157,7 @@ apis:
         url: overlays/shared-items-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/shared-items-openapi-api-evangelist-ratings.yml
-  - aid: box:box-shared-itemsfolders-api
+  - aid: box:box-shared-items-folders-api
     name: Box Shared Items#folders API
     description: Needs a description
     tags: []
@@ -174,7 +175,7 @@ apis:
         url: overlays/web-links-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/web-links-openapi-api-evangelist-ratings.yml
-  - aid: box:box-shared-itemsweb-links-api
+  - aid: box:box-shared-items-web-links-api
     name: Box Shared Items#web Links API
     description: Needs a description
     tags: []
@@ -495,3 +496,7 @@ maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
     email: info@apievangelist.com
+score: 212
+overlays:
+  - type: API Evangelist Ratings
+    url: /overlays/api-evangelist-ratings.yml
