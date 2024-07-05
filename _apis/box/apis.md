@@ -16,7 +16,8 @@ url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml
 created: 2023/11/09
 modified: 2023/11/09
 specificationVersion: '0.16'
-tags: []
+tags:
+  - Documents
 apis:
   - aid: box:box-authorize-api
     name: Box Authorize API

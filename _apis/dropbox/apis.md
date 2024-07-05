@@ -8,7 +8,8 @@ url: https://raw.githubusercontent.com/api-search/documents/main/_apis/dropbox/a
 created: 2024-06-07
 modified: 2024-06-07
 specificationVersion: '0.18'
-tags: []
+tags:
+  - Documents
 apis:
   - aid: dropbox:dropbox-api
     name: Dropbox API
