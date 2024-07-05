@@ -4,7 +4,7 @@ name: Dropbox
 description: >-
   Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, U.S. that offers cloud storage, file synchronization, personal cloud, and client software. 
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/dropbox.yml
+url: https://raw.githubusercontent.com/api-search/documents/main/_apis/dropbox/apis.md
 created: 2024-06-07
 modified: 2024-06-07
 specificationVersion: '0.18'

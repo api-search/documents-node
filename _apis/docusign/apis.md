@@ -4,7 +4,7 @@ name: Docusign
 description: >-
   Docusign, Inc. is an American software company headquartered in San Francisco, California, that provides products for organizations to manage electronic agreements with electronic signatures on different devices.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/docusign.yml
+url: https://raw.githubusercontent.com/api-search/documents/main/_apis/docusign/apis.md
 created: 2024-06-07
 modified: 2024-06-07
 specificationVersion: '0.18'

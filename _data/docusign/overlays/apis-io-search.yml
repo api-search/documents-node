@@ -10,7 +10,7 @@ description: >-
   software allows users to store and manage files in an online folder system
   accessible from any device. Users can then comment on the files, share them,
   apply workflows, and implement security and governance policies.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml
+url: https://raw.githubusercontent.com/api-search/documents/main/_data/docusign/overlays/apis-io-search.yml
 created: 2024/04/14
 modified: 2024/04/14
 specificationVersion: '0.16'
