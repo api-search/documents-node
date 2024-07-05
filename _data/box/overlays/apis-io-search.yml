@@ -14,7 +14,8 @@ url: https://raw.githubusercontent.com/api-search/documents/main/_data/box/overl
 created: 2024/04/14
 modified: 2024/04/14
 specificationVersion: '0.16'
-tags: []
+tags:
+  - Documents
 apis:
   - aid: box:box-authorize-api
     name: Box Authorize API
