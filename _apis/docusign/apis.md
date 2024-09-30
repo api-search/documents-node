@@ -1,3 +1,4 @@
+---
 aid: docusign
 name: Docusign
 description: >-
@@ -135,3 +136,4 @@ maintainers:
 overlays:
   - type: APIs.io Search
     url: overlays/apis-io-search.yml
+---

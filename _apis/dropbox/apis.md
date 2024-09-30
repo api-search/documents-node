@@ -1,3 +1,4 @@
+---
 aid: dropbox
 name: Dropbox
 description: >-
@@ -76,3 +77,4 @@ maintainers:
 overlays:
   - type: APIs.io Search
     url: overlays/apis-io-search.yml
+---
